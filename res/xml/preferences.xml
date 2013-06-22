@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	GetVelo
+    Copyright (C) 2013 Boris Fritscher
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+!-->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">                
+    <PreferenceCategory android:title="@string/display_settings">                
+        <ListPreference
+                android:key="default_network"
+                android:title="@string/default_network_title"
+                android:summary="@string/default_network_summary"
+                android:dialogTitle="@string/default_network_dialog" />
+        <ListPreference
+                android:key="sort_order"
+                android:title="@string/sort_order_title"
+                android:summary="@string/sort_order_summary"
+                android:entries="@array/station_sort_order_entries_list_preference"
+                android:entryValues="@array/station_sort_order_values_list_preference"
+                android:dialogTitle="@string/sort_order_dialog" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/about">
+        <PreferenceScreen
+                android:title="@string/about_data"
+                android:summary="velospot.ch, publibike.ch">
+        </PreferenceScreen>
+        </PreferenceCategory>
+</PreferenceScreen>

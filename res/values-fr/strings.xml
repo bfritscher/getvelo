@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	GetVelo
+    Copyright (C) 2013 Boris Fritscher
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+!-->
+<resources>
+    <string name="network_list">Liste des réseaux</string>
+    <string name="loading">Chargement...</string>
+    <string name="network_none">Aucun</string>
+    <string name="network_all">Tous</string>
+    <string name="error_loading_list">La récupération de la liste a échoué!</string>
+    <string name="nav_n">N</string>
+    <string name="nav_ne">NE</string>
+    <string name="nav_e">E</string>
+    <string name="nav_se">SE</string>
+    <string name="nav_s">S</string>
+    <string name="nav_sw">SO</string>
+    <string name="nav_w">O</string>
+    <string name="nav_nw">NO</string>
+    
+    <string name="display_settings">Paramètres d\'affichages</string>
+    
+    <string name="default_network_title">Réseau par défaut</string>
+    <string name="default_network_summary">Sélectionnez le réseau à afficher</string>
+    <string name="default_network_dialog">Sélectionnez un réseau</string>
+    
+    <string name="sort_order_title">Ordre des stations</string>
+    <string name="sort_order_summary">Sélectionnez l\'ordre d\'affichage des stations</string>
+    <string name="sort_order_dialog">Sélectionnez un ordre</string>
+    
+    <string name="sort_id">Réseau/No station</string>
+    <string name="sort_location">Distance des stations</string>
+    <string name="sort_city">Ville/nom des stations</string>
+    <string name="sort_abc">Alphabétiquement</string>
+    
+    <string name="about">A propos</string>
+    <string name="about_data">données de</string>
+    
+    <string name="menu_refresh">Actualiser</string>
+    <string name="menu_settings">Paramètres</string>
+    
+    <string name="choose">Choisir</string>
+</resources>

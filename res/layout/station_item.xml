@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	GetVelo
+    Copyright (C) 2013 Boris Fritscher
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+!-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:orientation="vertical">
+<TextView android:id="@+id/item_network_name"
+		android:layout_width="fill_parent"
+		android:layout_alignParentTop="true"
+		android:layout_height="wrap_content"
+		android:background="@color/city_background"
+		android:textColor="@color/city_name_text"
+		android:paddingLeft="6dip"
+		android:paddingTop="3dip"
+		android:paddingBottom="3dip"
+		android:text="City" 
+		android:visibility="gone"/>  
+<TextView android:id="@+id/item_city_name"
+		android:layout_width="fill_parent"
+		android:layout_alignParentTop="true"
+		android:layout_height="wrap_content"
+		android:background="@color/city_background"
+		android:textColor="@color/city_name_text"
+		android:paddingLeft="6dip"
+		android:paddingTop="3dip"
+		android:paddingBottom="3dip"
+		android:text="City" 
+		android:visibility="gone"/>  
+<RelativeLayout
+  android:layout_width="fill_parent"
+  android:padding="6dip"
+  android:layout_height="wrap_content"
+  android:minHeight="?android:attr/listPreferredItemHeight"> 
+<TextView android:id="@+id/item_station_name" 
+              android:layout_width="180dip"
+              android:layout_height="wrap_content" 
+              android:text="Station"
+              android:layout_alignParentTop="true"
+              android:layout_alignParentLeft="true"
+              android:textStyle="bold"
+              android:textAppearance="?android:attr/textAppearanceLarge"/>
+              
+<TextView android:id="@+id/item_station_distance" 
+              android:layout_width="fill_parent" 
+              android:layout_height="wrap_content" 
+              android:layout_below="@id/item_station_name"
+              android:text="3 km NE"
+              android:textAppearance="?android:attr/textAppearanceSmall" />              
+
+<ImageView  android:id="@+id/item_station_racks_img"
+			android:src="@drawable/rack" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentRight="true"
+			android:layout_centerVertical="true"
+			android:paddingTop="4dip"
+			android:layout_marginRight="12dip" />
+<TextView android:id="@+id/item_station_racks" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"  
+              android:text="XX"
+              android:layout_toLeftOf="@id/item_station_racks_img"
+              android:textSize="20sp"
+              android:paddingTop="4dip"
+              android:layout_marginRight="6dip"
+              android:minWidth="32dip"
+              android:gravity="right"/>			
+			
+<ImageView  android:id="@+id/item_station_bikes_img" 
+			android:src="@drawable/velo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerVertical="true" 
+			android:layout_toLeftOf="@id/item_station_racks"
+			/>
+<TextView android:id="@+id/item_station_bikes" 
+              android:layout_width="wrap_content" 
+              android:layout_height="wrap_content"
+              android:layout_centerVertical="true"  
+              android:text="YY"
+              android:layout_toLeftOf="@id/item_station_bikes_img"
+              android:textSize="20sp"
+              android:paddingTop="4dip"
+              android:layout_marginRight="6dip"
+              android:minWidth="32dip"
+              android:gravity="right"/>
+</RelativeLayout>
+</LinearLayout>

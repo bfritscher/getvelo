@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	GetVelo
+    Copyright (C) 2013 Boris Fritscher
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+!-->
+<resources>
+    <string name="network_list">Netzliste</string>
+    <string name="loading">Laden...</string>
+    <string name="network_none">Keine</string>
+    <string name="network_all">Alle</string>
+    <string name="error_loading_list">Die Liste konnte nicht wiederhergestellt werden!</string>
+    <string name="nav_n">N</string>
+    <string name="nav_ne">NO</string>
+    <string name="nav_e">O</string>
+    <string name="nav_se">SO</string>
+    <string name="nav_s">S</string>
+    <string name="nav_sw">SW</string>
+    <string name="nav_w">W</string>
+    <string name="nav_nw">NW</string>
+    
+    <string name="display_settings">Display-Einstellungen</string>
+    
+    <string name="default_network_title">Standard-Netz</string>
+    <string name="default_network_summary">Wählen Sie das anzuzeigende Netz</string>
+    <string name="default_network_dialog">Wählen Sie ein Netz aus</string>
+    
+    <string name="sort_order_title">Stationsreihenfolge</string>
+    <string name="sort_order_summary">Wählen Sie die Stationsreihenfolge aus</string>
+    <string name="sort_order_dialog">Wählen Sie die Reihenfolge aus</string>
+    
+    <string name="sort_id">Netz/Stationsnummer</string>
+    <string name="sort_location">Stationsentfernung</string>
+    <string name="sort_city">Stadt/Stationsname</string>
+    <string name="sort_abc">Alphabetisch</string>
+    
+    <string name="menu_refresh">Aktualisieren</string>
+    <string name="menu_settings">Parameter</string>
+    
+    <string name="choose">Wählen</string>
+</resources>

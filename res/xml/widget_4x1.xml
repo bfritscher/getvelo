@@ -1,25 +1,5 @@
-GetVelo
-=======
-
-GetVelo is an Android application to view bike sharing availability from Switzerland operators: velospot, velopass, publibike
-
-App is available on https://play.google.com/store/apps/details?id=ch.fritscher.getvelo
-
-Building
---------
-
-Jackson Java JSON-processor (http://jackson.codehaus.org/) is used.
-This project uses the GreenDroid Library https://github.com/cyrilmottier/GreenDroid
-
-Add Library Projects:
- * GreenDroid
- * GreenDroid-GoogleAPIs
-
-You have to change the google maps api key in res\layout\station.xml
-
-License
--------
-
+<?xml version="1.0" encoding="utf-8"?>
+<!--
 	GetVelo
     Copyright (C) 2013 Boris Fritscher
 
@@ -35,3 +15,10 @@ License
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+!-->
+<!--  (number of cells * 74) - 2 -->
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minWidth="294dip"
+    android:minHeight="72dip"
+    android:updatePeriodMillis="1800000"
+    android:initialLayout="@layout/widget_4x1" android:configure="ch.fritscher.getvelo.ui.WidgetConfigActivity"/>

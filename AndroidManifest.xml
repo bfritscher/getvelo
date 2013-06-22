@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+	GetVelo
+    Copyright (C) 2013 Boris Fritscher
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+!-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="ch.fritscher.getvelo"
+      android:versionCode="3"
+      android:versionName="2.0">
+      <uses-sdk android:minSdkVersion="8" 
+          android:targetSdkVersion="7" />
+	<uses-permission android:name="android.permission.INTERNET" />
+	<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+	<supports-screens
+        android:smallScreens="false"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:anyDensity="true" />
+    <application
+    android:icon="@drawable/icon"
+    android:label="@string/app_name"
+    android:name="GetVeloApplication"
+    android:theme="@style/Theme.GetVelo">
+    	<uses-library android:name="com.google.android.maps" />
+        <activity android:name=".ui.HomeActivity">
+                    <intent-filter>
+                <action android:name="android.intent.action.MAIN"></action>
+                <category android:name="android.intent.category.LAUNCHER"></category>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.StationActivity">
+
+        </activity>
+        <activity android:name=".ui.GetVeloPreferenceActvity"></activity>
+        
+        <activity android:name=".ui.WidgetConfigActivity">
+		    <intent-filter>
+		        <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE" />
+		    </intent-filter>
+		</activity>
+        
+                <!-- Broadcast Receiver that will process AppWidget updates -->
+        <receiver android:name=".ui.GetVeloWidget" android:label="@string/widget_name">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data android:name="android.appwidget.provider"
+                android:resource="@xml/widget_4x1" />
+        </receiver>
+
+        <!-- Service to perform web API queries -->
+        <service android:name=".ui.GetVeloWidget$UpdateService" />
+        
+    </application>
+</manifest>
